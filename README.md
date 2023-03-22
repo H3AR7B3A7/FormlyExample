@@ -1,27 +1,19 @@
 # FormlyExample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+ng add @angular-eslint/schematics
+yarn add -D prettier eslint-config-prettier eslint-plugin-prettier prettier-eslint
+ng add @ngrx/store
+ng add @ngrx/effects
+ng add @ngrx/store-devtools
+(strict with type checking)
+yarn add -D @ngrx/schematics
+yarn add -D angular-in-memory-web-api
+yarn add -D @total-typescript/ts-reset
+yarn add -D @trivago/prettier-plugin-sort-imports eslint-plugin-deprecation eslint-plugin-unused-imports
+ng add @angular/material
+ng add @ngx-formly/schematics --ui-theme=material
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ng g m core
+ng g m shared
+ng g m patient-form
+ng g c patient-form/patient-form-shell --skip-tests
