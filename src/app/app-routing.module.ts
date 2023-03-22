@@ -1,17 +1,24 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
+import { HomeComponent } from '@app/home/home.component'
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'form',
-    pathMatch: 'full',
+    component: HomeComponent,
   },
   {
-    path: 'form',
+    path: 'patient-form',
     loadChildren: () =>
       import('./patient-form/patient-form.module').then(
         (m) => m.PatientFormModule
+      ),
+  },
+  {
+    path: 'treatment-form',
+    loadChildren: () =>
+      import('./treatment-form/treatment-form.module').then(
+        (m) => m.TreatmentFormModule
       ),
   },
 ]

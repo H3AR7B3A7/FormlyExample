@@ -2,10 +2,11 @@ import { Component } from '@angular/core'
 import { FormlyFieldConfig } from '@ngx-formly/core'
 
 @Component({
-  templateUrl: './patient-form-shell.component.html',
-  styleUrls: ['./patient-form-shell.component.scss'],
+  selector: 'app-treatment-form-shell',
+  templateUrl: './treatment-form-shell.component.html',
+  styleUrls: ['./treatment-form-shell.component.scss'],
 })
-export class PatientFormShellComponent {
+export class TreatmentFormShellComponent {
   model: { email: string } = { email: '' }
   fields: FormlyFieldConfig[] = [
     {
