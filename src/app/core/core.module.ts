@@ -6,11 +6,13 @@ import { EnsureModuleLoadedOnceGuard } from '@app/core/ensure-module-loaded-once
 import { appReducer } from '@app/core/state/app.reducer'
 import { EffectsModule } from '@ngrx/effects'
 import { StoreModule } from '@ngrx/store'
+import { FormlyModule } from '@ngx-formly/core'
 
 @NgModule({
   imports: [
     StoreModule.forFeature('app', appReducer),
     EffectsModule.forFeature([]),
+    FormlyModule.forRoot(),
   ],
   exports: [BrowserModule, BrowserAnimationsModule, HttpClientModule],
 })
