@@ -1,5 +1,7 @@
 # FormlyExample
 
+## Commands
+
 ng add @angular-eslint/schematics
 yarn add -D prettier eslint-config-prettier eslint-plugin-prettier prettier-eslint
 ng add @ngrx/store
@@ -17,3 +19,4 @@ ng g m core
 ng g m shared
 ng g m patient-form
 ng g c patient-form/patient-form-shell --skip-tests
+ng g c shared/form --skip-tests
